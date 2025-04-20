@@ -375,193 +375,18 @@ const questions = [
     answer: "B"
   },
   {
-    question: "When is the only case when a male officer can search a female?",
-    options: ["No female officer nearby", "She's a GRF", "Abetting terrorism under s83", "Committing VCH"],
-    answer: "C"
-  },
-  {
-    question: "Which MRT station has 4 ESPs per platform?",
-    options: ["DTL stations", "TEL stations", "NSL stations only", "NSEWL stations"],
-    answer: "D"
-  },
-  {
-    question: "What does LMS help assess?",
-    options: ["Scene control", "Casualty evaluation", "Train risk", "Equipment draw timing"],
-    answer: "B"
-  },
-  {
     question: "What type of article prompts an E-LIST?",
     options: ["Abandoned article", "All left bags", "Items near escalators", "Personal belongings"],
-    answer: "A"
-  },
-  {
-    question: "What is the purpose of the 'ABC' hidden rule set?",
-    options: ["How to react", "What not to do", "Checklists", "Command structure"],
-    answer: "B"
-  },
-  {
-    question: "What does the 'Victor' label on a person refer to?",
-    options: ["Vape", "Violent subject", "Volunteer", "Verified suspect"],
-    answer: "A"
-  },
-  {
-    question: "Which MRT mascot encourages speaking softly?",
-    options: ["Bag Down Benny", "Hush Hush Hannah", "Stand Up Stacey", "Give Way Glenda"],
-    answer: "B"
-  },
-  {
-    question: "What section covers voluntary causing hurt in committing Robbery under the Penal Code?",
-    options: ["s394", "s379", "s323", "s294"],
-    answer: "A"
-  },
-  {
-    question: "What does PAD stand for?",
-    options: ["Public Affairs Department", "Patrol Assistance Division", "Public Alert Division", "Police Assessment Department"],
-    answer: "A"
-  },
-  {
-    question: "What is an escape hood used for?",
-    options: ["Fire extinguisher", "Smoke inhalation", "Gas mask during CA", "Heat shield"],
-    answer: "C"
-  },
-  {
-    question: "Who gives the command 'Taser Taser'?",
-    options: ["AB", "TL", "GL", "TOR"],
-    answer: "C"
-  },
-  {
-    question: "What should you check for when inspecting a train?",
-    options: ["PPEs, TELI, unattended items", "Crowd", "Timings", "Speed"],
-    answer: "A"
-  },
-  {
-    question: "Which act governs the possession of scheduled drugs?",
-    options: ["CESOWA", "MDA", "RTSA", "POHA"],
-    answer: "B"
-  },
-  {
-    question: "What does CESOWA stand for?",
-    options: [
-      "Control of Explosives, Substances, Offensive Weapons Act",
-      "Corrosive Explosives & Specified Offensive Weapons Act",
-      "Chemical and Explosive Scheduled Offensive Weaponry Act",
-      "Central Enforcement and Special Ordinance Weapons Act"
-    ],
-    answer: "B"
-  },
-  {
-    question: "Which mnemonic refers to common drug paraphernalia?",
-    options: ["SPICE", "SSS BMW ART", "AOJ", "HOT"],
-    answer: "B"
-  },
-  {
-    question: "What is the penalty for possession of scheduled weapons?",
-    options: ["Fine only", "Fine or imprisonment", "Imprisonment only", "No penalty unless used"],
-    answer: "B"
-  },
-  {
-    question: "What does PAD stand for?",
-    options: ["Public Affairs Department", "Patrol and Deterrence", "Police Action Division", "Platform Access Division"],
-    answer: "A"
-  },
-  {
-    question: "What is the function of the FPO?",
-    options: [
-      "First Police Officer to arrive at incident",
-      "Field Patrol Officer for fare evasion",
-      "Firearm Protection Officer",
-      "Forensics and Processing Officer"
-    ],
-    answer: "A"
-  },
-  {
-    question: "What does BWC stand for?",
-    options: ["Basic Warning Communicator", "Body-Worn Camera", "Bus Window Control", "Broadcast Warning Control"],
-    answer: "B"
-  },
-  {
-    question: "Which MRT station is an interchange on the TEL and Circle Line?",
-    options: ["Caldecott", "Woodlands", "Newton", "Outram Park"],
-    answer: "A"
-  },
-  {
-    question: "What does a TELI with a grey tab indicate?",
-    options: ["Newly installed", "Tampered", "no tampering", "Red station"],
-    answer: "C"
-  },
-  {
-    question: "Which team conducts plainclothes patrols in MRT stations?",
-    options: ["BASS", "SSTF", "PAD", "CBRE"],
-    answer: "A"
-  },
-  {
-    question: "Which MRT line connects Mandai Depot?",
-    options: ["NEL", "DTL", "TEL", "EWL"],
-    answer: "C"
-  },
-  {
-    question: "Which of the following is used to detect explosives?",
-    options: ["Sabre 5000", "BWC", "MDT", "ECB"],
     answer: "A"
   },
   {
     question: "What is the purpose of a bubble sweep?",
     options: [
       "Inspect platforms for sabotage",
-      "Inspect trains for TELI and PPE compliance",
+      "Inspect platforms for TELI and PPE compliance",
       "Check uniforms of commuters",
       "Clean cabin windows"
     ],
-    answer: "B"
-  },
-  {
-    question: "Which MRT mascot reminds commuters to keep noise levels down?",
-    options: ["Give Way Glenda", "Hush Hush Hannah", "Move In Martin", "Stand Up Stacey"],
-    answer: "B"
-  },
-  {
-    question: "How much is the fine for eating or drinking in MRT?",
-    options: ["$200", "$300", "$500", "$1000"],
-    answer: "C"
-  },
-  {
-    question: "What must be included in a deviation message?",
-    options: ["Time only", "Buddy name", "Points missed and SB/OE", "OCT shift info"],
-    answer: "C"
-  },
-  {
-    question: "Which form is used for arrests and seizures?",
-    options: ["NP 322", "NP 299", "MDT Entry", "NP 308"],
-    answer: "B"
-  },
-  {
-    question: "What does SPICE refer to?",
-    options: ["Suspect behavior indicators", "IED component types", "Drug categories", "Reporting template"],
-    answer: "B"
-  },
-  {
-    question: "Which MRT mascot promotes moving deeper into the cabin?",
-    options: ["Give Way Glenda", "Hush Hush Hannah", "Stand Up Stacey", "Move In Martin"],
-    answer: "D"
-  },
-  {
-    question: "Which acronym helps assess a casualty’s condition in ERT?",
-    options: ["SPICE", "LMS", "SALUTE", "SSS"],
-    answer: "B"
-  },
-  {
-    question: "What is the function of the ECB?",
-    options: ["Train emergency power shutoff", "Passenger feedback system", "Automatic gate control", "Body camera data sync"],
-    answer: "A"
-  },
-  {
-    question: "When reporting a suspicious article, what acronym do you use?",
-    options: ["SPICE", "FOCUS", "E-LIST", "SALUTE"],
-    answer: "C"
-  },
-  {
-    question: "Where are emergency stop plungers located?",
-    options: ["In tunnels", "On MRT platforms", "In MRT depots", "Inside cabins only"],
     answer: "B"
   },
   {
@@ -571,28 +396,13 @@ const questions = [
   },
   {
     question: "Which MRT line has only two ESPs per platform?",
-    options: ["NSEWL", "DTL", "TEL", "NSL"],
+    options: ["NSEWL", "DTL & CCL", "TEL", "NSL"],
     answer: "B"
   },
   {
     question: "Which MRT depot supports the East-West Line?",
-    options: ["Tuas", "Mandai", "Kim Chuan", "Ulu Pandan"],
+    options: ["Tuas only", "Mandai", "Kim Chuan", "Tuas, Ulu Pandan & Changi"],
     answer: "D"
-  },
-  {
-    question: "What is the term for the first train station covered during a shift?",
-    options: ["OE", "SB", "TP", "BS"],
-    answer: "B"
-  },
-  {
-    question: "What must be included in a proper SITREP message?",
-    options: ["MRT name, crowd size, mood", "Only platform mood", "Incident only", "Location and officer name"],
-    answer: "A"
-  },
-  {
-    question: "Which station has a missing NFC tag at Platform C HW?",
-    options: ["Tuas Link", "Khatib", "Woodlands", "Bugis"],
-    answer: "C"
   },
   {
     question: "What does the acronym MDT stand for?",
@@ -600,18 +410,8 @@ const questions = [
     answer: "B"
   },
   {
-    question: "What does CESOWA stand for?",
-    options: [
-      "Corrosive and Explosive Substances and Offensive Weapons Act",
-      "Controlled Equipment, Substances, and Other Weapons Act",
-      "Chemical Explosive Safety Ordinance and Weapons Act",
-      "Controlled Entry of Substances and Offensive Weapons Authority"
-    ],
-    answer: "A"
-  },
-  {
-    question: "Which item is commonly associated with drug abuse?",
-    options: ["AFID tag", "Lighter", "Escape hood", "BWC"],
+    question: "Which item is a drug utensil in SSS BMW ART?",
+    options: ["AFID tag", "Modified Lighter", "Escape hood", "BWC"],
     answer: "B"
   },
   {
@@ -630,24 +430,9 @@ const questions = [
     answer: "B"
   },
   {
-    question: "What does FPO stand for?",
-    options: ["First Police Officer", "Field Patrol Officer", "Final Point Overseer", "Force Policy Operator"],
-    answer: "A"
-  },
-  {
-    question: "Which acronym describes IED components?",
-    options: ["SPICE", "FOCUS", "PAD", "AFID"],
-    answer: "A"
-  },
-  {
     question: "What does AOJ stand for?",
     options: ["Action-Observe-Judge", "Ability-Opportunity-Jeopardy", "Assess-Offend-Justify", "Arrest-Order-Jurisdiction"],
     answer: "B"
-  },
-  {
-    question: "Which MRT line has Mandai Depot?",
-    options: ["NSL", "EWL", "TEL", "CCL"],
-    answer: "C"
   },
   {
     question: "What is the purpose of a platform sweep?",
@@ -662,16 +447,6 @@ const questions = [
   {
     question: "Which station is classified as Red and under WL?",
     options: ["Yishun", "Outram Park", "Tampines", "Paya Lebar"],
-    answer: "A"
-  },
-  {
-    question: "What does the ECB do?",
-    options: [
-      "Shuts off train power",
-      "Turns off CCTV",
-      "Activates MRT alarm",
-      "Reports to OCC"
-    ],
     answer: "A"
   },
   {
@@ -690,26 +465,6 @@ const questions = [
     answer: "C"
   },
   {
-    question: "What triggers a CA Yellow alert?",
-    options: [
-      "Confirmed chemical symptoms",
-      "Report of unusual smell or sensation",
-      "Public complaint",
-      "Missing equipment"
-    ],
-    answer: "B"
-  },
-  {
-    question: "What must you include in a deviation message after a missed Bravo point?",
-    options: [
-      "Only the final station",
-      "Your TL’s name",
-      "Missed point, SB/OE station, and reason",
-      "Screenshot of MDT"
-    ],
-    answer: "C"
-  },
-  {
     question: "What does a red arrow indicate in CA zones?",
     options: ["Safe route", "Wind direction", "Source of CA", "Cordon location"],
     answer: "C"
@@ -717,7 +472,7 @@ const questions = [
   {
     question: "What does PVMS stand for?",
     options: [
-      "Public Video Monitoring System",
+      "Police Visit Monitoring System",
       "Patrol Video Management System",
       "Police Visual Monitoring Station",
       "Passenger Video Monitoring Surveillance"
@@ -745,19 +500,9 @@ const questions = [
     answer: "C"
   },
   {
-    question: "What’s the primary function of the TL?",
-    options: [
-      "Update roster",
-      "Lead and coordinate ground deployment",
-      "Issue punishments",
-      "Control crowd"
-    ],
-    answer: "B"
-  },
-  {
     question: "What does SALUTE stand for?",
     options: [
-      "Size, Activity, Location, Unit, Time, Equipment",
+      "Size, Activity, Location, Uniform, Time, Equipment",
       "Signal, Area, Location, Unit, Transport, Evacuate",
       "Safety, Area, Lookout, Unit, Tactics, Escape",
       "Size, Area, Line, Unit, Timing, Escape"
@@ -773,17 +518,17 @@ const questions = [
     question: "What does TELI stand for?",
     options: [
       "Tampered Emergency Label Indicator",
-      "Tamper Evidence Label Indicator",
+      "Tampered Evidence Label Indicator",
       "Train Emergency Locking Interface",
       "Transit Emergency Leak Index"
     ],
     answer: "B"
   },
   {
-    question: "What’s the purpose of an EPT?",
+    question: "What’s the purpose of an emergency telephone?",
     options: [
       "Cut train power",
-      "Talk to station staff",
+      "Talk to passenger service center",
       "Open MRT cabin door",
       "Shut ECB circuit"
     ],
