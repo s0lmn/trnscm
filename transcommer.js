@@ -1,30 +1,75 @@
 const questions = [
   {
+    type: "open-ended",
+    question: "What does 'P' stand for in the Transcom Ethos?",
+    answer: "purpose driven"
+  },
+    {
+    type: "mcq",
+    question: "what is Tier 1 approach categorized in ACTiVE?",
+    options: [ "Consensus resolution", "Peacemaking", "Punitive"],
+    answer: "B"
+  },
+  {
+  type: "mcq",
+  question: "In taser SOP, what does 'IA IA' indicate?",
+  options: ["Injury Alert", "Immediate Action", "Reloading", "Irregular Attack"],
+  answer: ["B", "C"] // Now the answer can be either B or C
+},
+  {
+    type: "mcq",
+    question: "In SINDRARCO, what does the first 'R' stand for?",
+    options: ["Race", "Rank", "Result", "Relation"],
+    answer: "A"
+  },
+  {
+    type: "mcq",
+    question: "Which of the following is part of Transcom Zero Tolerance?",
+    options: ["Firearms Safety", "Fare Evasion", "Late Reporting", "Littering"],
+    answer: "A"
+  },
+  {
+    type: "open-ended",
+    question: "List the components of Transcom Zero Tolerance.",
+    answer: "firearms safety person in custody matters management information security bullying and ragging"
+  },
+  {
+    type: "open-ended",
+    question: "Name the four areas under Transcom Jurisdiction.",
+    answer: "mrt/lrt station, bus interchange, bicycle bay, mrt/bus depot"
+  },
+ {
+    type: "mcq",
     question: "What does 'L' stand for in the LPS principle of use of force?",
     options: ["Legality", "Lethality", "Logic", "Level"],
     answer: "A"
   },
   {
+    type: "mcq",
     question: "Which station is considered a red station under WL jurisdiction?",
     options: ["Dhoby Ghaut", "Toa Payoh", "Lavender", "Serangoon"],
     answer: "B"
   },
   {
+    type: "mcq",
     question: "Which acronym refers to the taser cartridge ID tags?",
     options: ["SPICE", "AFID", "LMS", "TELI"],
     answer: "B"
   },
   {
+    type: "mcq",
     question: "What is the effective duration of a taser shot?",
     options: ["3 seconds", "5 seconds", "7 seconds", "10 seconds"],
     answer: "B"
   },
   {
+    type: "mcq",
     question: "Who conducts the third round of E-LIST verification, after yourself and TOR?",
     options: ["TOR", "SM", "TL", "CBRE"],
     answer: "C"
   },
   {
+    type: "mcq",
     question: "What should you say before drawing 3 Tetras, 3 Palm Mics, and 3 Escape Hoods?",
     options: [
       "I am SC XX from YYY, permission to draw equipment for my team",
@@ -35,199 +80,359 @@ const questions = [
     answer: "B"
   },
   {
+    type: "mcq",
     question: "Which screening method is used when the identification card is available?",
     options: ["Sphere(Facial recognition)", "FOCUS", "HOT", "ABBSS(Automated Biometric and Behavioural Screening Suite)"],
     answer: "B"
   },
   {
+    type: "mcq",
     question: "Which code word refers to ankle tags?",
     options: ["Rolex", "Victor", "BASS", "Target"],
     answer: "A"
   },
   {
+    type: "mcq",
     question: "What does the ‘P’ in LPS stand for?",
     options: ["Precaution", "Proportion", "Proportionality", "Permission"],
     answer: "C"
   },
   {
+    type: "mcq",
     question: "Which zone do officers operate in during a chemical attack?",
     options: ["Red", "within Amber & White boundary", "Amber", "White"],
     answer: "B"
   },
   {
+    type: "mcq",
     question: "What does the acronym ‘SPICE’ describe?",
     options: ["A taser model", "E-LIST assessment", "IED components", "Law codes"],
     answer: "C"
   },
   {
+    type: "mcq",
     question: "Which MRT station is the deepest in Singapore?",
     options: ["Bras Basah", "Bencoolen", "Promenade", "Dhoby Ghaut"],
     answer: "B"
   },
   {
+    type: "mcq",
     question: "When is uniform inspection held?",
     options: ["Every morning shift", "Every last shift", "Every 1st afternoon shift", "Weekly"],
     answer: "C"
   },
   {
+    type: "mcq",
     question: "Which of the following is a red station under WL jurisdiction?",
     options: ["Serangoon", "Toa Payoh", "Orchard", "HarbourFront"],
     answer: "B"
   },
   {
+    type: "mcq",
     question: "What is the correct SITREP mood descriptor for an aggressive crowd?",
     options: ["Chaotic", "Normal", "Aggressive", "Static"],
     answer: "C"
   },
   {
+    type: "mcq",
     question: "What do the arrows in a CA attack scenario represent?",
     options: ["Airflow", "Sabre sweep paths", "Evacuation zones", "Shortest and direct routes"],
     answer: "D"
   },
   {
+    type: "mcq",
     question: "Who do you report to first if you need help during deployment?",
     options: ["NSI", "Regular", "Mentor", "Buddy intake then mentor then regular"],
     answer: "D"
   },
   {
+    type: "mcq",
     question: "What is the cordon radius for a suspicious vehicle during E-LIST?",
     options: ["100m", "200m", "300m", "400m"],
     answer: "D"
   },
   {
+    type: "mcq",
     question: "Which tool is used to shut off track power?",
     options: ["emergency communication button", "short circuit device or/and emergency trip station", "emergency stop plunger", "emergency telephone"],
     answer: "B"
   },
   {
+    type: "mcq",
     question: "What fine applies for eating in MRT?",
     options: ["$200", "$300", "$500", "$1000"],
     answer: "C"
   },
   {
+    type: "mcq",
     question: "Which section of the CPC allows arrest if someone refuses to give name and address?",
     options: ["s(65)", "s(83)", "s(9)", "s(31)"],
     answer: "A"
   },
   {
+    type: "mcq",
     question: "Which principle of AOJ refers to the subject’s ability to cause harm?",
     options: ["Jeopardy", "Legality", "Opportunity", "Ability"],
     answer: "D"
   },
   {
+    type: "mcq",
     question: "What should AGL do when GL draws a taser?",
     options: ["Radio TOR", "Activate MDT", "Draw firearm", "Hold subject"],
     answer: "C"
   },
   {
+    type: "mcq",
     question: "Which screening method uses facial recognition?",
     options: ["Sphere", "FOCUS", "biometric criminal database", "ABBSS"],
     answer: "A"
   },
   {
+    type: "mcq",
     question: "Which of these is NOT in the taser pouch?",
     options: ["Alcohol wipes", "Mini-scissors", "Ziploc bags", "AED pads"],
     answer: "D"
   },
   {
+    type: "mcq",
     question: "Who are you NOT allowed to handcuff?",
     options: ["Uniformed staff", "Suspects", "IS", "IC-holders"],
     answer: "A"
   },
   {
+    type: "mcq",
     question: "What does 'HOT' stand for in E-LIST signs?",
     options: ["Hazard, Objective, Target", "Hidden, Obvious, Typical", "Hard, Obvious, Tense", "High-risk, Orderly, Typical"],
     answer: "B"
   },
   {
+    type: "open-ended",
+    question: "What does 'P' stand for in the LPS principle of use of force?",
+    answer: "proportionality",
+  },
+  {
+    type: "mcq",
+    question: "Which is NOT an aspect of ACTiVE punch framework?",
+    options: ["Public Place", "Use of Implements", "Height of Suspect", "Consciousness"],
+    answer: "C"
+  },
+  {
+    type: "open-ended",
+    question: "What does 'B' stand for in Transcom ABCS?",
+    answer: "baton, bwc"
+  },
+  {
+    type: "open-ended",
+    question: "What is the response time for urgent cases in minutes?",
+    answer: "15"
+  },
+  {
+    type: "open-ended",
+    question: "List the components of Transcom Zero Tolerance.",
+    answer: "firearms safety, person in custody, management, information security (OSA), bullying and ragging"
+  },
+  {
+    type: "mcq",
+    question: "What does 'L' stand for in the LPS principle of use of force?",
+    options: ["Legality", "Lethality", "Logic", "Level"],
+    answer: "A"
+  },
+  {
+    type: "mcq",
+    question: "Which button allows passengers to talk to train staff?",
+    options: ["Emergency Stop Plunger", "Emergency Trip Station", "Emergency Communication Button", "Signal Reset Switch"],
+    answer: "C"
+  },
+  {
+    type: "mcq",
+    question: "During CA Attack SOP, when should you evacuate after donning Escape Hood?",
+    options: ["5 minutes", "10 minutes", "15 minutes", "20 minutes"],
+    answer: "C"
+  },
+  {
+    type: "mcq",
+    question: "What is the first action if signs of CA attack are noticed?",
+    options: ["Call SCDF", "Don Escape Hood", "Press ESP", "Move casualties"],
+    answer: "B"
+  },
+  {
+    type: "open-ended",
+    question: "List any two patrol equipment items officers must carry.",
+    answer: "mobile data terminal, police visits monitoring system"
+  },
+  {
+    type: "mcq",
+    question: "Which infrastructure discharges the 750V third rail?",
+    options: ["Emergency Communication Button", "Emergency Stop Plunger", "Emergency Trip Station", "Emergency Public Telephone"],
+    answer: "C"
+  },
+  {
+    type: "mcq",
+    question: "Which patrol equipment allows photo taking?",
+    options: ["Escape Hood", "Mobile Data Terminal", "Police Access Travel Pass", "Taser"],
+    answer: "B"
+  },
+  {
+    type: "mcq",
+    question: "What equipment is used to track officer movement?",
+    options: ["PVMS", "Escape Hood", "Taser", "Radio"],
+    answer: "A"
+  },
+  {
+    type: "open-ended",
+    question: "What does 'H' stand for in HOT in the E-LIST checklist?",
+    answer: "hidden"
+  },
+  {
+    type: "mcq",
+    question: "What identifies a plainclothes officer during Red Storm?",
+    options: ["Red Badge", "Taser Holster", "Blue Force Identifier", "Neon Armband"],
+    answer: "C"
+  },
+  {
+    type: "open-ended",
+    question: "Name the three stages of PIE in policing action.",
+    answer: "protect, intervene, effect an arrest"
+  },
+  {
+    type: "mcq",
+    question: "Which location is NOT under Transcom jurisdiction?",
+    options: ["MRT Station", "Airport Terminal", "Bus Interchange", "MRT Depot"],
+    answer: "B"
+  },
+  {
+    type: "open-ended",
+    question: "List the three steps you must take after assessing a CA attack.",
+    answer: "don escape hood, inform ops room, press ESP"
+  },
+  {
+    type: "open-ended",
+    question: "Explain what SINDRARCO stands for.",
+    answer: "station name, ic number, name, date of birth, race, address, result, contact number, occupation"
+  },
+  {
+    type: "mcq",
     question: "What acronym is used for reporting casualties to ops room while in ERT?",
     options: ["LMS (location mobility severity)", "EAA", "SPICE", "SSTF"],
     answer: "A"
   },
   {
+    type: "mcq",
     question: "Which MRT lines have 2 Emergency stop plungers per platform?",
     options: ["NSEWL", "DTL & CCL", "TEL", "NEL"],
     answer: "B"
   },
   {
+    type: "mcq",
     question: "What mnemonic is used for remembering the red stations under WL?",
     options: ["TBY", "BBTTW", "HIRISK", "YBT"],
     answer: "A"
   },
   {
+    type: "mcq",
     question: "What is the emergency communication button used for?",
     options: ["Power cut", "CCTV switch", "Train-staff communication", "Passenger alarm"],
     answer: "C"
   },
   {
+    type: "mcq",
     question: "What does AFID contain?",
     options: ["Train code", "Taser cartridge ID", "MDT serial", "BWC ID"],
     answer: "B"
   },
   {
+    type: "mcq",
     question: "How many fire extinguishers are there per MRT cabin?",
     options: ["1", "2", "3", "4"],
     answer: "B"
   },
   {
+    type: "mcq",
     question: "Which offence is described under s323 of the Penal Code?",
     options: ["Outrage of Modesty", "Robbery", "VCH", "Mischief"],
     answer: "C"
   },
   {
+    type: "mcq",
     question: "What is the penalty for misuse of the emergency communication button?",
     options: ["$1000", "$5000", "$2000", "$3000"],
     answer: "B"
   },
   {
+    type: "mcq",
     question: "Which report is NP 322 used for?",
     options: ["Lost and Found", "Arrest", "Traffic", "Medical"],
     answer: "A"
   },
   {
+    type: "mcq",
     question: "What does BASS stand for?",
     options: ["Behavioural Analysis Sweep Squad", "Behavioural Assessment Screening System", "Bus And Security Surveillance", "Basic Alert System Support"],
     answer: "B"
   },
   {
+    type: "mcq",
     question: "What is the purpose of a bubble sweep?",
     options: ["Check train speed", "Clean MRT cabin", "Check TELI and PPE", "Scan EAA"],
     answer: "C"
   },
   {
+    type: "mcq",
     question: "What does the MRT mascot 'Move in Martin' remind you to do?",
     options: ["Speak softly", "Shift into the cabin", "Wait patiently", "Give way"],
     answer: "B"
   },
   {
+    type: "mcq",
     question: "Which act governs scheduled weapons?",
     options: ["POHA", "CESOWA", "MODA", "NRA"],
     answer: "B"
   },
   {
+    type: "mcq",
     question: "What does the abbreviation 'SPDC' stand for?",
     options: ["Singapore Public Drug Control", "Singapore Police Duty Cigarettes", "Singapore Paid Duty Cigarettes", "Special Product Detainment Code"],
     answer: "C"
   },
   {
+    type: "mcq",
     question: "What does the red zone mean in CA response?",
     options: ["Cold area", "Staging point", "CA Release point", "E-flare fallback"],
     answer: "C"
   },
   {
+    type: "mcq",
     question: "Which MRT depot serves the TEL line?",
     options: ["Mandai", "Kim Chuan", "Tuas", "Ulu Pandan"],
     answer: "A"
   },
   {
+    type: "mcq",
     question: "Which of the following is a component of SPICE?",
     options: ["Station", "Power Supply", "Impression", "Crew"],
     answer: "B"
   },
   {
+    type: "mcq",
     question: "Which principle in LPS emphasizes officer, the target and MOP safety?",
     options: ["Legality", "Proportionality", "Safety", "Authority"],
     answer: "C"
+  },
+  {
+    type: "open-ended",
+    question: "What information must be noted down for an Alpha Bravo case?",
+    answer: "rank, name, callsign, fire station hospital, handover timing, reason for handover"
+  },
+  {
+    type: "mcq",
+    question: "Which value is part of Transcom Ethos?",
+    options: ["Selfishness", "Purpose Driven", "Casualness", "Laziness"],
+    answer: "B"
+  },
+  {
+    type: "open-ended",
+    question: "What does 'D' stand for in LDNLSD relay during CA attack reporting?",
+    answer: "description of the chemical agent attack"
   },
   {
     question: "Which is NOT part of the CA symptom NBCBT?",
@@ -535,6 +740,39 @@ const questions = [
     answer: "B"
   },
   {
+    type: "open-ended",
+    question: "What does HOT stand for in E-List?",
+    answer: "hidden obvious typical"
+  },
+  {
+    type: "mcq",
+    question: "Under the Liquor Control Act, what is arrestable?",
+    options: ["Selling liquor", "Public drunkenness", "Transporting liquor", "Importing liquor"],
+    answer: "B"
+  },
+  {
+    type: "open-ended",
+    question: "What are the components of ACTiVE punch assessment?",
+    answer: "public place, use of implements, numbers, consciousness of accused, harm caused"
+  },
+  {
+    type: "mcq",
+    question: "Which of the following is part of Transcom Zero Tolerance?",
+    options: ["Firearms Safety", "Fare Evasion", "Late Reporting", "Littering"],
+    answer: "A"
+  },
+  {
+    type: "mcq",
+    question: "Which station is considered a red station under WL jurisdiction?",
+    options: ["Dhoby Ghaut", "Toa Payoh", "Lavender", "Serangoon"],
+    answer: "B"
+  },
+  {
+    type: "open-ended",
+    question: "list all transcom ethos terms under service mindset (ABCDE), leave no commas, lowercase, only spaces.",
+    answer: "attitude behaviour competency duty empathy"
+  },
+    {
     question: "What does the MRT acronym OCC refer to?",
     options: [
       "Operations Control Centre",
@@ -563,63 +801,129 @@ const questions = [
 
 let currentQuestion = 0;
 let selectedAnswer = null;
+let correctAnswers = 0;
+let incorrectAnswers = 0;
 
 const questionText = document.getElementById("question-text");
 const optionsContainer = document.getElementById("options-container");
 const feedback = document.getElementById("feedback");
 const nextBtn = document.getElementById("next-btn");
+const prevBtn = document.getElementById("prev-btn");
+const finalScore = document.getElementById("final-score");
 
 function loadQuestion() {
   const q = questions[currentQuestion];
-  questionText.textContent = `Q${currentQuestion + 1}: ${q.question}`;
-  optionsContainer.innerHTML = ""; // Clear previous options
-  feedback.textContent = ""; // Clear previous feedback
+  const questionType = q.type || "mcq";
 
-  // Create answer buttons dynamically
-  q.options.forEach((option, idx) => {
-    const btn = document.createElement("button");
-    btn.textContent = `${String.fromCharCode(65 + idx)}: ${option}`;  // Dynamically set A, B, C, D for options
-    btn.classList.add("btn", "btn-outline-primary", "w-100", "my-2");
-    btn.onclick = () => handleAnswer(idx, btn); // Pass index to identify selected option
-    optionsContainer.appendChild(btn);
+  questionText.textContent = `Q${currentQuestion + 1}: ${q.question}`;
+  optionsContainer.innerHTML = "";
+  feedback.textContent = "";
+  nextBtn.disabled = false;  // Always enable the Next button
+  prevBtn.disabled = currentQuestion === 0;
+  selectedAnswer = null;
+
+  if (questionType === "mcq") {
+    q.options.forEach((option, idx) => {
+      const btn = document.createElement("button");
+      btn.textContent = `${String.fromCharCode(65 + idx)}: ${option}`;
+      btn.classList.add("btn", "btn-outline-primary", "w-100", "my-2");
+      btn.onclick = () => handleMCQAnswer(idx, btn);
+      optionsContainer.appendChild(btn);
+    });
+  } else if (questionType === "open-ended") {
+    const input = document.createElement("input");
+    input.type = "text";
+    input.placeholder = "Type your answer here...";
+    input.classList.add("form-control", "my-2");
+    optionsContainer.appendChild(input);
+
+    const submitBtn = document.createElement("button");
+    submitBtn.textContent = "Submit Answer";
+    submitBtn.classList.add("btn", "btn-primary", "w-100", "my-2");
+    submitBtn.onclick = () => handleOpenEndedAnswer(input.value.trim());
+    optionsContainer.appendChild(submitBtn);
+  }
+}
+
+function handleMCQAnswer(idx, btn) {
+  if (selectedAnswer !== null) return;
+
+  selectedAnswer = idx;
+  const correctAnswersArray = questions[currentQuestion].answer;
+
+  const allButtons = optionsContainer.querySelectorAll("button");
+  allButtons.forEach((b, i) => {
+    b.disabled = true;
+    if (correctAnswersArray.includes(String.fromCharCode(65 + i))) {
+      b.classList.remove("btn-outline-primary");
+      b.classList.add("btn-success");
+    } else if (i === idx) {
+      b.classList.remove("btn-outline-primary");
+      b.classList.add("btn-danger");
+    }
   });
 
-  // Enable the "Next" button right away
+  feedback.textContent = correctAnswersArray.includes(String.fromCharCode(65 + idx)) ? "Correct!" : "Wrong!";
+  if (correctAnswersArray.includes(String.fromCharCode(65 + idx))) {
+    correctAnswers++;
+  } else {
+    incorrectAnswers++;
+  }
+
   nextBtn.disabled = false;
 }
 
-function handleAnswer(idx, btn) {
-  if (selectedAnswer) return;  // Prevent multiple answers
+function handleOpenEndedAnswer(userInput) {
+  if (selectedAnswer !== null) return;
 
-  selectedAnswer = idx;  // Store the selected index
-  const correctIdx = questions[currentQuestion].answer.charCodeAt(0) - 65;  // Convert 'A', 'B', 'C', etc. to an index (0, 1, 2, ...)
+  const correctAnswer = questions[currentQuestion].answer.toLowerCase();
+  const userAnswer = userInput.toLowerCase();
 
-  // Apply styles for correct/wrong answers
-  const allButtons = optionsContainer.querySelectorAll("button");
-  allButtons.forEach((b, i) => {
-    // If it's the correct answer, color it green, if it's the selected answer, color it red
-    if (i === correctIdx) {
-      b.classList.add("btn-success"); // Correct answer
-    } else if (i === idx) {
-      b.classList.add("btn-danger"); // Wrong selected answer
-    }
-    b.disabled = true;  // Disable all buttons once an answer is selected
-  });
+  if (userInput === "") {
+    feedback.textContent = "Please enter an answer!";
+    return;
+  }
 
-  feedback.textContent = idx === correctIdx ? "Correct!" : "Wrong!";
+  selectedAnswer = userAnswer;
+  feedback.textContent = userAnswer === correctAnswer ? "Correct!" : `Wrong! Correct answer: ${questions[currentQuestion].answer}`;
+  const inputField = optionsContainer.querySelector("input");
+  inputField.disabled = true;
+  const submitBtn = optionsContainer.querySelector("button");
+  submitBtn.disabled = true;
+
+  if (userAnswer === correctAnswer) {
+    correctAnswers++;
+  } else {
+    incorrectAnswers++;
+  }
+
+  nextBtn.disabled = false;
+}
+
+function updateScore() {
+  finalScore.textContent = `Correct Answers: ${correctAnswers}, Incorrect Answers: ${incorrectAnswers}`;
 }
 
 nextBtn.onclick = () => {
   currentQuestion++;
   if (currentQuestion < questions.length) {
-    selectedAnswer = null;  // Reset for the next question
-    loadQuestion();  // Load the next question
+    loadQuestion();
   } else {
     questionText.textContent = "Quiz Complete!";
     optionsContainer.innerHTML = "";
     feedback.textContent = "";
     nextBtn.disabled = true;  // Disable "Next" button when quiz is completed
+    updateScore();  // Show score at the end
+    finalScore.style.display = "block";  // Make score visible
   }
 };
 
-loadQuestion(); // Initialize the quiz with the first question
+prevBtn.onclick = () => {
+  if (currentQuestion > 0) {
+    currentQuestion--;
+    loadQuestion();
+    updateScore(); // Update the score whenever you go back to a previous question
+  }
+};
+
+loadQuestion();  // Initialize the quiz with the first question
