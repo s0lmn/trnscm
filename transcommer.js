@@ -4,7 +4,18 @@ const questions = [
     question: "What does 'P' stand for in the Transcom Ethos?",
     answer: "purpose driven"
   },
+  {
+    type: "open-ended",
+    question: "Name all drugs in the CCCK MEH acronym.",
+    answer: "cocaine, codeine, cannabi, ketamine, methamphetamine, ecstasy, heroin"
+  },
     {
+    type: "mcq",
+    question: "In K9 code language, what does 'Victor' refer to?",
+    options: ["Vape", "Violent suspect", "Vehicle", "Volunteer"],
+    answer: "A"
+  },
+  {
     type: "mcq",
     question: "what is Tier 1 approach categorized in ACTiVE?",
     options: [ "Consensus resolution", "Peacemaking", "Punitive"],
@@ -22,11 +33,32 @@ const questions = [
     options: ["Race", "Rank", "Result", "Relation"],
     answer: "A"
   },
+    {
+    type: "open-ended",
+    question: "What does TLSA stand for",
+    answer: "Team Leader Staff Assistant",
+  },
+  {
+    type: "open-ended",
+    question: "Declare cash for 2 crew (excluding yourself) in the elogsheet, first man being SC/CPL Zheng Yu with zero dollars",
+    answer: "Crew: SC/CPL Zheng Yu Cash declaration: $0/-SGD"
+  },
+  {
+    type: "mcq",
+    question: "What does ",
+    options: ["Firearms Safety", "Fare Evasion", "Late Reporting", "Littering"],
+    answer: "A"
+  },
   {
     type: "mcq",
     question: "Which of the following is part of Transcom Zero Tolerance?",
     options: ["Firearms Safety", "Fare Evasion", "Late Reporting", "Littering"],
     answer: "A"
+  },
+  {
+    type: "open-ended",
+    question: "What does VLP stand for",
+    answer: "Vulnerable Location Point"
   },
   {
     type: "open-ended",
@@ -109,6 +141,58 @@ const questions = [
     options: ["A taser model", "E-LIST assessment", "IED components", "Law codes"],
     answer: "C"
   },
+    {
+    type: "mcq",
+    question: "In CA attack SOP, what does 'D' stand for in L.D.N.L.S.D.?",
+    options: ["Distance", "Description", "Delay", "Directive"],
+    answer: "B"
+  },
+  {
+    type: "mcq",
+    question: "Which of the following is NOT part of details to note for 10-4 (Arrest)?",
+    options: ["Duty phone", "NPC Service number", "MRT line color", "Callsign"],
+    answer: "C"
+  },
+    {
+    type: "mcq",
+    question: "Where is the door release lever located for manual train evacuation?",
+    options: ["Inside the cabin", "Outside beneath the train", "Beside emergency telephone", "In driver's cabin"],
+    answer: "B"
+  },
+    {
+    type: "open-ended",
+    question: "Explain the use of the door release lever during emergencies.",
+    answer: "release hydraulic function manually open train doors"
+  },
+  {
+    type: "mcq",
+    question: "Which depot serves the Downtown Line (DTL)?",
+    options: ["Tuas", "Kim Chuan", "Gali Batu", "Mandai"],
+    answer: "C"
+  },
+    {
+    type: "mcq",
+    question: "How many MRT stations does Paya Lebar Base cover?",
+    options: ["45", "50", "89", "16"],
+    answer: "C"
+  },
+    {
+    type: "mcq",
+    question: "Which is one of the three outcomes when a screening shows ROMEO (WANTED)?",
+    options: ["Arrest POI", "Ignore POI", "Send POI home", "Ask POI to come back later"],
+    answer: "A"
+  },
+    {
+    type: "open-ended",
+    question: "List the three types of ROMEO outcomes for WANTED persons.",
+    answer: "wanted arrest, wanted trace whereabouts, wanted missing person"
+  },
+    {
+    type: "mcq",
+    question: "What must be keyed into PVMS sit-rep?",
+    options: ["Crowd color", "Crowd size and mood", "Temperature", "Noise level"],
+    answer: "B"
+  },
   {
     type: "mcq",
     question: "Which MRT station is the deepest in Singapore?",
@@ -139,6 +223,28 @@ const questions = [
     options: ["Airflow", "Sabre sweep paths", "Evacuation zones", "Shortest and direct routes"],
     answer: "D"
   },
+    {
+    type: "open-ended",
+    question: "List all four RSUD items brought down by the TL during an incident.",
+    answer: "riot shield, sabre 5000, ultraradiac, dosimeter"
+  },
+    {
+    type: "mcq",
+    question: "Which of the following is NOT a drug utensil under SSS BMW ART?",
+    options: ["Burnt spoon", "Tube", "Plastic fork", "Modified lighter"],
+    answer: "C"
+  },
+    {
+    type: "open-ended",
+    question: "State what 'L.D.N.L.S.D' stands for in chemical agent attack SOP relay to SCDF.",
+    answer: "location, description, number of casualties, location of casualties, symptoms, determine dirty bomb"
+  },
+    {
+    type: "mcq",
+    question: "When handling a missing person case, what must officers do when NOK arrives?",
+    options: ["Release the person", "Record NOK particulars", "Leave scene immediately", "Hand over to MRT staff"],
+    answer: "B"
+  },
   {
     type: "mcq",
     question: "Who do you report to first if you need help during deployment?",
@@ -147,9 +253,42 @@ const questions = [
   },
   {
     type: "mcq",
+    question: "In SPICE, what does the 'I' represent?",
+    options: ["Ignition", "Initiator", "Indicator", "Instigator"],
+    answer: "B"
+  },
+  {
+    type: "mcq",
     question: "What is the cordon radius for a suspicious vehicle during E-LIST?",
     options: ["100m", "200m", "300m", "400m"],
     answer: "D"
+  },
+  {
+    type: "open-ended",
+    question: "List all four elements required when entering a situation report in PVMS.",
+    answer: "crowd size crowd density crowd movement crowd mood"
+  },
+  {
+    type: "mcq",
+    question: "Which is NOT a key action during a bubble sweep?",
+    options: ["Look behind pillars", "Sweep train speed", "Check lifts", "Project Police Presence"],
+    answer: "B"
+  },
+  {
+    type: "open-ended",
+    question: "List all five components of SPICE for an IED.",
+    answer: "switch, power source, initiator, container, explosive"
+  },
+  {
+    type: "open-ended",
+    question: "List four types of drug utensils under the acronym SSS BMW ART.",
+    answer: "burnt spoon, cut off straw, syringe, bong, modified lighter, weighing scale, burnt Aluminium foil, rolled up paper, tube"
+  },
+  {
+    type: "mcq",
+    question: "Which is a controlled drug under CCCK MEH?",
+    options: ["Aspirin", "Cannabis", "Panadol", "Paracetamol"],
+    answer: "B"
   },
   {
     type: "mcq",
@@ -618,6 +757,12 @@ const questions = [
     question: "Which item is a drug utensil in SSS BMW ART?",
     options: ["AFID tag", "Modified Lighter", "Escape hood", "BWC"],
     answer: "B"
+  },
+    {
+    type: "mcq",
+    question: "Which equipment is part of the RSUD items brought down by TL during an incident?",
+    options: ["Riot Shield", "MDT", "BWC", "Handcuffs"],
+    answer: "A"
   },
   {
     question: "Which act governs the possession of controlled substances?",
