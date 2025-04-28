@@ -8,7 +8,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  overflow-x: hidden; /* Prevent any horizontal scrolling */
+  overflow-x: hidden; /* Prevent any side scrolling */
 }
 
 /* BODY Layout */
@@ -18,7 +18,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 80px 20px 20px; /* Top padding for buttons */
+  padding: 100px 20px 20px; /* Top padding for the fixed buttons */
   position: relative;
   min-height: 100vh;
 }
@@ -26,37 +26,37 @@ body {
 /* QUIZ Container */
 .quiz-container {
   background: white;
-  padding: 20px 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   width: 100%;
-  max-width: 500px; /* Centered narrow content */
+  max-width: 700px; /* Bigger on larger screens */
   margin-top: 20px;
 }
 
 /* Title */
 h1 {
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 24px;
+  margin-bottom: 30px;
+  font-size: 32px;
 }
 
 /* Fixed Buttons */
 #prev-btn, #next-btn {
   position: fixed;
   top: 20px;
-  padding: 10px 15px;
-  font-size: 20px;
+  padding: 15px 20px;
+  font-size: 24px;
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 50%;
   cursor: pointer;
   z-index: 1000;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-/* Button Disabled State */
+/* Disabled State */
 #prev-btn:disabled, #next-btn:disabled {
   background-color: #ccc;
   cursor: not-allowed;
@@ -73,24 +73,24 @@ h1 {
 
 /* Icons inside Buttons */
 #prev-btn i, #next-btn i {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 /* Question and Options */
 #question-container {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .options button {
   display: block;
   width: 100%;
-  margin: 8px 0;
-  padding: 12px;
+  margin: 12px 0;
+  padding: 15px;
   background: #eee;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   text-align: left;
 }
 
@@ -109,41 +109,49 @@ h1 {
 /* Feedback */
 #feedback {
   font-weight: bold;
-  margin-top: 15px;
+  margin-top: 20px;
   text-align: center;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 /* --- Mobile Optimizations --- */
 @media (max-width: 600px) {
   body {
-    padding: 80px 10px 10px;
+    padding: 100px 10px 20px;
   }
 
   .quiz-container {
-    padding: 15px 20px;
+    padding: 25px 20px;
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 0; /* Make container stretch full width */
+    box-shadow: none; /* Optional: remove shadow on mobile */
   }
 
   h1 {
-    font-size: 20px;
+    font-size: 28px;
   }
 
   #prev-btn, #next-btn {
-    padding: 8px 12px;
-    font-size: 18px;
+    padding: 18px 22px;
+    font-size: 30px;
+  }
+
+  #prev-btn i, #next-btn i {
+    font-size: 30px;
   }
 
   .options button {
-    font-size: 14px;
-    padding: 10px;
+    font-size: 18px;
+    padding: 18px;
   }
 
   #feedback {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
-/* Prevent viewport zoom on mobile devices (optional but useful) */
+/* Prevent zooming when clicking inputs on mobile */
 input, button, select, textarea {
-  font-size: 16px; /* Minimum font size to prevent zooming on focus */
+  font-size: 16px;
 }
