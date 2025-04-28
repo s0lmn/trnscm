@@ -4,6 +4,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 50px;
+  position: relative;
 }
 
 .quiz-container {
@@ -12,11 +13,61 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   width: 500px;
+  margin-top: 50px; /* Adjust to ensure quiz content is visible with button fixed at the top */
 }
 
 h1 {
   text-align: center;
   margin-bottom: 20px;
+}
+
+/* Style the "Previous" button to appear at the top-left corner */
+#prev-btn {
+  position: fixed;
+  top: 20px;  /* Position 20px from the top */
+  left: 20px; /* Position 20px from the left */
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  border-radius: 50%; /* Circular button */
+  cursor: pointer;
+  z-index: 10; /* Make sure it's on top of other content */
+}
+
+#prev-btn:disabled {
+  background-color: #ccc; /* Disabled state for the button */
+  cursor: not-allowed;
+}
+
+/* Style the "Next" button to appear at the top-right corner */
+#next-btn {
+  position: fixed;
+  top: 20px;  /* Position 20px from the top */
+  right: 20px; /* Position 20px from the right */
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  border-radius: 50%; /* Circular button */
+  cursor: pointer;
+  z-index: 10; /* Make sure it's on top of other content */
+}
+
+#next-btn:disabled {
+  background-color: #ccc; /* Disabled state for the button */
+  cursor: not-allowed;
+}
+
+#prev-btn i, #next-btn i {
+  font-size: 24px;  /* Make the icons bigger */
+}
+
+/* Style the question text and options */
+#question-container {
+  margin-top: 50px;
 }
 
 .options button {
@@ -46,11 +97,4 @@ h1 {
   font-weight: bold;
   margin-top: 10px;
   text-align: center;
-}
-
-#next-btn {
-  margin-top: 20px;
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
 }
