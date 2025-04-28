@@ -1,4 +1,4 @@
-/* RESET basic styles */
+/* RESET base styles */
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  overflow-x: hidden; /* Prevent any side scrolling */
+  overflow: hidden; /* Prevent any scrolling or panning */
 }
 
 /* BODY Layout */
@@ -17,10 +17,9 @@ body {
   background: #f5f5f5;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding: 100px 20px 20px; /* Top padding for the fixed buttons */
+  align-items: center;
+  padding: 100px 20px 20px; /* Top padding to make space for fixed buttons */
   position: relative;
-  min-height: 100vh;
 }
 
 /* QUIZ Container */
@@ -30,8 +29,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   width: 100%;
-  max-width: 700px; /* Bigger on larger screens */
-  margin-top: 20px;
+  max-width: 600px;
 }
 
 /* Title */
@@ -44,9 +42,6 @@ h1 {
 /* Fixed Buttons */
 #prev-btn, #next-btn {
   position: fixed;
-  top: 20px;
-  padding: 15px 20px;
-  font-size: 24px;
   background-color: #007bff;
   color: white;
   border: none;
@@ -54,26 +49,32 @@ h1 {
   cursor: pointer;
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Disabled State */
+/* Button Disabled State */
 #prev-btn:disabled, #next-btn:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
 
+/* Default desktop button size */
+#prev-btn, #next-btn {
+  top: 20px;
+  width: 70px;
+  height: 70px;
+  font-size: 28px;
+}
+
 /* Button Positions */
 #prev-btn {
-  left: 20px;
+  left: calc(37% - 180px); /* Position relative to center */
 }
 
 #next-btn {
-  right: 20px;
-}
-
-/* Icons inside Buttons */
-#prev-btn i, #next-btn i {
-  font-size: 24px;
+  right: calc(37% - 180px);
 }
 
 /* Question and Options */
@@ -85,7 +86,7 @@ h1 {
   display: block;
   width: 100%;
   margin: 12px 0;
-  padding: 15px;
+  padding: 18px;
   background: #eee;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -114,36 +115,43 @@ h1 {
   font-size: 22px;
 }
 
-/* --- Mobile Optimizations --- */
+/* --- Mobile Device Enhancements --- */
 @media (max-width: 600px) {
   body {
-    padding: 100px 10px 20px;
+    padding: 80px 10px 20px;
   }
 
   .quiz-container {
     padding: 25px 20px;
-    margin-top: 20px;
     max-width: 100%;
-    border-radius: 0; /* Make container stretch full width */
-    box-shadow: none; /* Optional: remove shadow on mobile */
+    height: auto;
+    border-radius: 0; /* No rounded corners for mobile */
+    box-shadow: none; /* Flat look on mobile */
   }
 
   h1 {
     font-size: 28px;
   }
 
+  /* Bigger, closer buttons */
   #prev-btn, #next-btn {
-    padding: 18px 22px;
-    font-size: 30px;
+    top: 10px;
+    width: 80px;
+    height: 80px;
+    font-size: 34px;
   }
 
-  #prev-btn i, #next-btn i {
-    font-size: 30px;
+  #prev-btn {
+    left: 10px;
+  }
+
+  #next-btn {
+    right: 10px;
   }
 
   .options button {
-    font-size: 18px;
-    padding: 18px;
+    font-size: 22px;
+    padding: 20px;
   }
 
   #feedback {
@@ -151,7 +159,7 @@ h1 {
   }
 }
 
-/* Prevent zooming when clicking inputs on mobile */
+/* Prevent zooming when focusing on inputs/buttons */
 input, button, select, textarea {
   font-size: 16px;
 }
