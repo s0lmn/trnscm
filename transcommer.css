@@ -1,35 +1,50 @@
+/* RESET basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* Prevent any horizontal scrolling */
+}
+
+/* BODY Layout */
 body {
   font-family: Arial, sans-serif;
   background: #f5f5f5;
   display: flex;
   justify-content: center;
-  padding: 50px 20px; /* smaller padding for mobile */
+  align-items: flex-start;
+  padding: 80px 20px 20px; /* Top padding for buttons */
   position: relative;
-  min-height: 100vh; /* Full screen height */
-  box-sizing: border-box;
+  min-height: 100vh;
 }
 
+/* QUIZ Container */
 .quiz-container {
   background: white;
   padding: 20px 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   width: 100%;
-  max-width: 500px;
-  margin-top: 80px; /* Space for fixed buttons */
-  box-sizing: border-box;
+  max-width: 500px; /* Centered narrow content */
+  margin-top: 20px;
 }
 
+/* Title */
 h1 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 24px;
 }
 
-/* Fixed Navigation Buttons */
+/* Fixed Buttons */
 #prev-btn, #next-btn {
   position: fixed;
-  top: 10px;
+  top: 20px;
   padding: 10px 15px;
   font-size: 20px;
   background-color: #007bff;
@@ -41,19 +56,22 @@ h1 {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
+/* Button Disabled State */
 #prev-btn:disabled, #next-btn:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
 
+/* Button Positions */
 #prev-btn {
-  left: 10px;
+  left: 20px;
 }
 
 #next-btn {
-  right: 10px;
+  right: 20px;
 }
 
+/* Icons inside Buttons */
 #prev-btn i, #next-btn i {
   font-size: 20px;
 }
@@ -88,6 +106,7 @@ h1 {
   background-color: #f9c0c0;
 }
 
+/* Feedback */
 #feedback {
   font-weight: bold;
   margin-top: 15px;
@@ -95,15 +114,14 @@ h1 {
   font-size: 18px;
 }
 
-/* Make it mobile-friendly */
+/* --- Mobile Optimizations --- */
 @media (max-width: 600px) {
   body {
-    padding: 30px 10px;
+    padding: 80px 10px 10px;
   }
 
   .quiz-container {
     padding: 15px 20px;
-    margin-top: 70px;
   }
 
   h1 {
@@ -123,4 +141,9 @@ h1 {
   #feedback {
     font-size: 16px;
   }
+}
+
+/* Prevent viewport zoom on mobile devices (optional but useful) */
+input, button, select, textarea {
+  font-size: 16px; /* Minimum font size to prevent zooming on focus */
 }
