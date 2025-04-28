@@ -3,8 +3,10 @@ body {
   background: #f5f5f5;
   display: flex;
   justify-content: center;
-  padding: 50px;
+  padding: 50px 20px; /* smaller padding for mobile */
   position: relative;
+  min-height: 100vh; /* Full screen height */
+  box-sizing: border-box;
 }
 
 .quiz-container {
@@ -12,73 +14,66 @@ body {
   padding: 20px 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  width: 500px;
-  margin-top: 50px; /* Adjust to ensure quiz content is visible with button fixed at the top */
+  width: 100%;
+  max-width: 500px;
+  margin-top: 80px; /* Space for fixed buttons */
+  box-sizing: border-box;
 }
 
 h1 {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 24px;
 }
 
-/* Style the "Previous" button to appear at the top-left corner */
+/* Fixed Navigation Buttons */
+#prev-btn, #next-btn {
+  position: fixed;
+  top: 10px;
+  padding: 10px 15px;
+  font-size: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+#prev-btn:disabled, #next-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
 #prev-btn {
-  position: fixed;
-  top: 20px;  /* Position 20px from the top */
-  left: 20px; /* Position 20px from the left */
-  background-color: #007bff; /* Blue background */
-  color: white; /* White text */
-  border: none;
-  padding: 10px;
-  font-size: 24px;
-  border-radius: 50%; /* Circular button */
-  cursor: pointer;
-  z-index: 10; /* Make sure it's on top of other content */
+  left: 10px;
 }
 
-#prev-btn:disabled {
-  background-color: #ccc; /* Disabled state for the button */
-  cursor: not-allowed;
-}
-
-/* Style the "Next" button to appear at the top-right corner */
 #next-btn {
-  position: fixed;
-  top: 20px;  /* Position 20px from the top */
-  right: 20px; /* Position 20px from the right */
-  background-color: #007bff; /* Blue background */
-  color: white; /* White text */
-  border: none;
-  padding: 10px;
-  font-size: 24px;
-  border-radius: 50%; /* Circular button */
-  cursor: pointer;
-  z-index: 10; /* Make sure it's on top of other content */
-}
-
-#next-btn:disabled {
-  background-color: #ccc; /* Disabled state for the button */
-  cursor: not-allowed;
+  right: 10px;
 }
 
 #prev-btn i, #next-btn i {
-  font-size: 24px;  /* Make the icons bigger */
+  font-size: 20px;
 }
 
-/* Style the question text and options */
+/* Question and Options */
 #question-container {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .options button {
   display: block;
   width: 100%;
-  margin: 5px 0;
-  padding: 10px;
+  margin: 8px 0;
+  padding: 12px;
   background: #eee;
   border: 1px solid #ccc;
+  border-radius: 6px;
   cursor: pointer;
   font-size: 16px;
+  text-align: left;
 }
 
 .options button.selected {
@@ -95,6 +90,37 @@ h1 {
 
 #feedback {
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 15px;
   text-align: center;
+  font-size: 18px;
+}
+
+/* Make it mobile-friendly */
+@media (max-width: 600px) {
+  body {
+    padding: 30px 10px;
+  }
+
+  .quiz-container {
+    padding: 15px 20px;
+    margin-top: 70px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  #prev-btn, #next-btn {
+    padding: 8px 12px;
+    font-size: 18px;
+  }
+
+  .options button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #feedback {
+    font-size: 16px;
+  }
 }
