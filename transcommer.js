@@ -27,12 +27,6 @@ const questions = [
   options: ["Injury Alert", "Immediate Action", "Reloading", "Irregular Attack"],
   answer: ["B", "C"] // Now the answer can be either B or C
 },
-  {
-    type: "mcq",
-    question: "In SINDRARCO, what does the first 'R' stand for?",
-    options: ["Race", "Rank", "Result", "Relation"],
-    answer: "A"
-  },
     {
     type: "open-ended",
     question: "What does TLSA stand for",
